@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+:root {
+  /* Typography System */
+  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Responsive Fluid Typography Clamps */
+  --font-size-hero: clamp(1.75rem, 3vw, 2.5rem);
+  --font-size-page-title: clamp(1.5rem, 2.5vw, 2rem);
+  --font-size-section-title: clamp(1.25rem, 2vw, 1.5rem);
+  --font-size-card-title: clamp(1rem, 1.5vw, 1.25rem);
+  --font-size-body: clamp(0.875rem, 1vw, 1rem);
+  --font-size-small: clamp(0.75rem, 0.9vw, 0.875rem);
+  --font-size-telemetry: clamp(0.9rem, 1.3vw, 1.1rem);
+  --font-size-button: clamp(0.8rem, 1vw, 0.95rem);
+
+  /* Spacing Tokens */
+  --space-micro: 4px;
+  --space-small: 8px;
+  --space-compact: 12px;
+  --space-normal: 16px;
+  --space-card: 24px;
+  --space-large: 32px;
+  --space-major: 48px;
+
+  /* Border Radius Tokens */
+  --radius-control: 8px;
+  --radius-input: 10px;
+  --radius-card: 14px;
+  --radius-container: 18px;
+  --radius-pill: 9999px;
+
+  /* Semantic Colors - Light Mode */
+  --bg-primary: #F8FAFC;
+  --bg-secondary: #F1F5F9;
+  --surface: #FFFFFF;
+
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+
+  --border-color: #E2E8F0;
+
+  --primary: #2563EB;
+  --primary-hover: #1D4ED8;
+
+  --success: #059669;
+  --warning: #D97706;
+  --danger: #DC2626;
+  --info: #0284C7;
+
+  /* Aegis Live Telemetry Accent */
+  --aegis-accent: #10B981;
+}
+
+/* Dark Mode Tokens Override */
+.dark-theme, body:not(.light-theme) {
+  --bg-primary: #020617;
+  --bg-secondary: #0F172A;
+  --surface: #0F172A;
+  --surface-secondary: #172033;
+
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+
+  --border-color: #334155;
+
+  --primary: #3B82F6;
+  --primary-hover: #2563EB;
+}
+
+body {
+  font-family: var(--font-ui);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-sans {
+  font-family: var(--font-ui) !important;
+}
+
+.font-mono {
+  font-family: var(--font-mono) !important;
+}
+
+/* Fluid Typography Helper Classes */
+.text-clamp-hero { font-size: var(--font-size-hero); }
+.text-clamp-page { font-size: var(--font-size-page-title); }
+.text-clamp-section { font-size: var(--font-size-section-title); }
+.text-clamp-card { font-size: var(--font-size-card-title); }
+.text-clamp-body { font-size: var(--font-size-body); }
+.text-clamp-small { font-size: var(--font-size-small); }
+.text-clamp-telemetry { font-size: var(--font-size-telemetry); }
+.text-clamp-button { font-size: var(--font-size-button); }
+
+/* Minimum Touch Target for Mobile Touch Usability */
+button, a, input, select {
+  min-height: 38px;
+}
+@media (max-width: 768px) {
+  button, a, input, select {
+    min-height: 44px;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 9999px;
+}
+
