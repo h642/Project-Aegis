@@ -305,6 +305,12 @@ v
 - OUT- ---> Common System GND
 - OUT+ ---> SPDT Switch (Pin 2) ---> ESP32 VIN / 5V
 
+## Hardware working Video link
+https://drive.google.com/file/d/13d-q9zYz9jK9TbfxSeQbN8evdQGFCEyA/view?usp=drivesdk
+
+## Website Working Live link
+https://aegisv1.netlify.app
+
 ## 🌐 Blynk IoT Integration
 
 AegisOne natively integrates with **Blynk IoT** to deliver real-time hardware status synchronization, live G-force telemetry streaming, and instant mobile push notifications to iOS and Android smartphones without requiring manual port forwarding.
