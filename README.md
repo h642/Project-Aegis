@@ -44,6 +44,32 @@ AegisOne is a production-ready, full-stack emergency response, telemetry analysi
 - **Preset Persona Switcher**: Quickly switch between pre-configured patient profiles (Senior Citizen, Cardiac Telemetry, Active Athlete) or authenticate via Supabase Auth.
 
 ---
+## 🏆 Bounty Features & Requirements
+
+The application implements a dedicated **Security Case Management & Triage Hub** designed for security UI engineering and incident report analysis.
+
+### 1. 🏷️ Investigation Status Labels & Persistent Notes (Core)
+- **Status Badges**: Reviewers can mark security incident reports with status labels (`Needs Review`, `Suspected`, or `Verified`), rendered with distinct visual badges across both master list cards and detail views.
+- **Persistent Investigator Notes**: Reviewers can append timestamped notes with custom author names and roles (e.g., Investigator, Admin, Dispatch Officer, Cardiologist). Notes automatically persist across case selection states.
+- **Model Integrity Audit Guarantee**: Includes a prominent **"Detection Model Unchanged / Unaltered"** audit stamp ensuring reviewer status updates and investigator notes function strictly as an annotation/audit layer over raw incident payloads without modifying or retraining underlying detection parameters.
+
+### 2. 🗂️ Role-Aware Security Case Filters & Tabs (Advance)
+- **Role Scope Toolbar**: Filter security cases by role scopes: **All**, **User**, **Admin**, **Authority**, **Hospital**, and **Investigator**.
+- **Status Sub-Filters**: Instant sub-filtering by investigation status (`All`, `Needs Review`, `Suspected`, `Verified`).
+- **Dynamic Scoped Result Counts**: Real-time counter showing filtered record counts (e.g., `Filtered Records (3)`).
+- **Populated Telemetry Dataset**: Pre-populated with realistic incident reports (high-G impact, acute arrhythmia, panic SOS trigger, vehicle crash, hardware contact fault).
+
+### 3. 📄 Downloadable Evidence Briefs (.PDF, .TXT, .JSON) (Elite)
+- **1-Click Export**: Download official "Evidence Brief" reports directly from the case details view.
+- **Multi-Format Exporter**: Toggle between **.PDF**, **.TXT**, and **.JSON** formats before downloading.
+- **Forensic Content Combination**: Every exported brief automatically aggregates:
+  1. Case Reference ID, Timestamp, and Scope Role
+  2. AI Model Detection Confidence Score (%)
+  3. Device/Hardware Hash & Firmware Version
+  4. Natural language incident explanation & recorded vitals/kinematics
+  5. All reviewer-submitted persistent investigator notes & audit trail
+
+---
 
 ### 6. 🔌 API Schema Explorer
 - **Interactive REST Documentation**: Inspect structured JSON schemas for Schemas 1 through 6.
