@@ -1,0 +1,6 @@
+{
+  "name": "AegisOne",
+  "description": "Integrated emergency response, ESP32-S3 wearable telemetry triage, AI symptom & drug interaction engine, e-pharmacy refill logistics, and 1-tap emergency medical passport.",
+  "requestFramePermissions": ["microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

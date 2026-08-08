@@ -1,0 +1,74 @@
+{
+  "app": {
+    "title": "PROJEKT AEGIS",
+    "subtitle": "Intelligentes Sturzerkennungs- und Notfallalarmsystem",
+    "sosDispatch": "SOS-NOTRUF",
+    "triggerSos": "SOFORTIGEN SOS-NOTRUF AUSLÖSEN",
+    "emergencyActive": "NOTFALLDIENST AKTIV",
+    "cancelEmergency": "NOTRUF ABBRECHEN",
+    "systemActive": "Aegis-Hauptsystem Aktiv",
+    "esp32Connected": "ESP32-S3 Wearable Verbunden"
+  },
+  "nav": {
+    "home": "Haupt-Dashboard",
+    "telemetry": "Echtzeit-Telemetrie",
+    "triage": "Autonome Triage",
+    "passport": "Medizinischer Pass",
+    "profile": "Patientenprofil",
+    "report": "Notfallbericht",
+    "pharmacy": "E-Apotheken-Logistik",
+    "api": "API-Schema-Explorer",
+    "digest": "Täglicher Gesundheitsbericht",
+    "symptoms": "Symptomanalyse"
+  },
+  "gps": {
+    "title": "📍 SATELLITEN-ECHTZEIT-STANDORTKARTE",
+    "gpsActive": "🟢 GPS Aktiv",
+    "lastKnown": "⚠️ Letzter Bekannter Standort",
+    "permissionDenied": "Zugriff Verweigert",
+    "gpsStandby": "GPS Standby",
+    "subtitle": "Hochauflösende Satellitenkarte für sofortigen Notfalleinsatz",
+    "locationLink": "Standort-Link",
+    "refreshLocation": "[ Standort Aktualisieren ]",
+    "latitude": "Breitengrad",
+    "longitude": "Längengrad",
+    "accuracy": "Genauigkeit",
+    "lastUpdated": "Zuletzt Aktualisiert",
+    "lastKnownCached": "Zuletzt Gespeicherter Standort",
+    "satelliteView": "Satellitenansicht",
+    "streetMap": "Straßenkarte",
+    "recenter": "Auf Patient Zentrieren",
+    "patientLocation": "AEGIS PATIENTENSTANDORT",
+    "openGoogleMaps": "In Google Maps Öffnen ↗",
+    "disabledError": "Standortdienste deaktiviert. Bitte aktivieren Sie GPS für den Notfall."
+  },
+  "emergency": {
+    "alertTitle": "🚨 AEGIS NOTFALLALARM AKTIV",
+    "fallDetected": "Ein Sturz des Patienten wurde erkannt!",
+    "sosActivated": "Manueller SOS-Panikknopf Ausgelöst",
+    "patientCoordinates": "GPS-Koordinaten des Patienten:",
+    "viewLocationButton": "📍 Patientenstandort in Google Maps Anzeigen",
+    "callPrimaryCaregiver": "PFLEGER ANRUFEN",
+    "confirmSafe": "Ich Bin Sicher (Fehlalarm)",
+    "cancelWarning": "Die Bestätigung bricht den Alarm an die Rettungskräfte ab."
+  },
+  "settings": {
+    "language": "🌐 App-Sprache",
+    "selectLanguage": "Wählen Sie Ihre Bevorzugte Sprache",
+    "languageSubtitle": "Die Aegis-Benutzeroberfläche wird sofort aktualisiert",
+    "rememberNote": "Ihre Sprachauswahl wird lokal auf diesem Gerät gespeichert.",
+    "currentLanguage": "Aktuelle Sprache"
+  },
+  "common": {
+    "status": "Status",
+    "active": "Aktiv",
+    "refresh": "Aktualisieren",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "loading": "Laden...",
+    "error": "Fehler",
+    "close": "Schließen",
+    "details": "Details",
+    "view": "Anzeigen"
+  }
+}
